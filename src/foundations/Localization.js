@@ -3,10 +3,12 @@
 // All user-facing strings MUST flow through this module.
 
 import en from '../strings/en.json';
+import fr from '../strings/fr.json';
+import de from '../strings/de.json';
+import ptBR from '../strings/pt-BR.json';
+import es from '../strings/es.json';
 
-// Other language files will be imported in Task 6.
-// For M0 Task 5, only English is wired.
-const tables = { en };
+const tables = { en, fr, de, 'pt-BR': ptBR, es };
 
 let currentLang = 'en';
 

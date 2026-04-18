@@ -1,0 +1,98 @@
+{
+  "start.title": "CABBIE",
+  "start.subtitle": "Um táxi. Um motorista. Pagar o aluguel.",
+  "start.button": "DIRIGIR",
+  "start.hint": "W/A/S/D ou setas · inclinação no celular",
+
+  "hud.speed": "VELOC.",
+  "hud.cash": "GRANA",
+  "hud.fuel": "COMBUST.",
+  "hud.reputation": "REPUT.",
+  "hud.distance": "{m}m",
+  "hud.bribe": "SUBORNO ${amount}",
+
+  "fare.pickup.bar": [
+    "Me leva ao Rusty Hook, taxista.",
+    "Bairro dos bares, e rápido.",
+    "Preciso de um drink. Agora."
+  ],
+  "fare.pickup.office": [
+    "Centro, o mais rápido possível.",
+    "Pro escritório, por favor.",
+    "Tenho reunião em dez minutos."
+  ],
+  "fare.pickup.airport": [
+    "Aeroporto, por favor. Voo às seis.",
+    "Terminal 2, e nada de caminho longo.",
+    "Airport Spur. A rota rápida."
+  ],
+  "fare.pickup.hotel": [
+    "Hotel Grand, por favor.",
+    "Me deixa no Marquee.",
+    "Bairro dos hotéis."
+  ],
+  "fare.pickup.hospital": [
+    "Hospital Geral, sem pressa.",
+    "Hospital, mas vai devagar.",
+    "Clínica na Heights Road."
+  ],
+  "fare.pickup.home": [
+    "Pra casa. Por favor.",
+    "Me leva pra casa.",
+    "Caminho mais rápido pra minha casa."
+  ],
+  "fare.pickup.restaurant": [
+    "Le Petit Bistro.",
+    "Atrasado pro jantar — anda.",
+    "Rua dos restaurantes."
+  ],
+  "fare.pickup.mystery": [
+    "Só dirige. Eu digo onde.",
+    "Vai pro sul. Eu te guio.",
+    "Conhece um lugar calmo? Vai pra lá."
+  ],
+  "fare.completed": "+${tip} — {rating}",
+  "fare.rating.great": "Ótima corrida!",
+  "fare.rating.ok": "Ok.",
+  "fare.rating.rough": "Corrida turbulenta.",
+
+  "day.summary.title": "Dia {day}",
+  "day.summary.revenue": "Receita: ${revenue}",
+  "day.summary.expenses": "Despesas: -${expenses}",
+  "day.summary.net": "Líquido: ${net}",
+  "day.summary.continue": "Continuar",
+
+  "settings.title": "Ajustes",
+  "settings.audio.master": "Volume geral",
+  "settings.audio.music": "Música",
+  "settings.audio.sfx": "Efeitos",
+  "settings.audio.mono": "Áudio mono",
+  "settings.visual.reducedMotion": "Movimento reduzido",
+  "settings.visual.highContrast": "Alto contraste",
+  "settings.visual.textScale": "Tamanho do texto",
+  "settings.visual.colorblind": "Perfil daltônico",
+  "settings.motor.tiltSensitivity": "Sensib. de inclinação",
+  "settings.motor.relaxedTiming": "Tempo relaxado",
+  "settings.assist.economy": "Assist. econômica",
+  "settings.assist.relaxedPolice": "Polícia relaxada",
+  "settings.assist.relaxedSLAs": "Contratos relaxados",
+  "settings.assist.autoPilot": "Piloto automático",
+
+  "police.chase.warning": "POLÍCIA",
+  "police.fine.paid": "Multa paga: -${amount}",
+
+  "driver.tier.rookie": "Novato",
+  "driver.tier.journey": "Experiente",
+  "driver.tier.pro": "Profissional",
+  "driver.tier.ace": "Ás",
+
+  "menu.new_game": "Novo Jogo",
+  "menu.continue": "Continuar",
+  "menu.settings": "Ajustes",
+  "menu.credits": "Créditos",
+
+  "common.plural.drivers": "{count, plural, one {# motorista} other {# motoristas}}",
+  "common.cancel": "Cancelar",
+  "common.confirm": "Confirmar",
+  "common.undo": "Desfazer"
+}
