@@ -1,0 +1,98 @@
+{
+  "start.title": "CABBIE",
+  "start.subtitle": "One cab. One driver. Make rent.",
+  "start.button": "DRIVE",
+  "start.hint": "W/A/S/D or arrow keys · tilt on mobile",
+
+  "hud.speed": "SPEED",
+  "hud.cash": "CASH",
+  "hud.fuel": "FUEL",
+  "hud.reputation": "REP",
+  "hud.distance": "{m}m",
+  "hud.bribe": "BRIBE ${amount}",
+
+  "fare.pickup.bar": [
+    "Take me to The Rusty Hook, cabbie.",
+    "Bar district, and step on it.",
+    "I need a drink. Now."
+  ],
+  "fare.pickup.office": [
+    "Downtown, fast as you can.",
+    "Take me to the office.",
+    "Got a meeting in ten minutes."
+  ],
+  "fare.pickup.airport": [
+    "Airport, please. Flight at six.",
+    "Terminal 2, and don't take the long way.",
+    "Airport Spur. The quick route."
+  ],
+  "fare.pickup.hotel": [
+    "The Grand, please.",
+    "Drop me at the Marquee.",
+    "Hotel district."
+  ],
+  "fare.pickup.hospital": [
+    "County General, non-emergency.",
+    "Hospital, but take it easy.",
+    "Clinic on Heights Road."
+  ],
+  "fare.pickup.home": [
+    "Home. Please.",
+    "Take me home.",
+    "Fastest way to my place."
+  ],
+  "fare.pickup.restaurant": [
+    "Le Petit Bistro.",
+    "Late for dinner — move it.",
+    "Restaurant row."
+  ],
+  "fare.pickup.mystery": [
+    "Just drive. I'll tell you where.",
+    "Head south. I'll direct.",
+    "Know a quiet place? Go there."
+  ],
+  "fare.completed": "+${tip} — {rating}",
+  "fare.rating.great": "Great drive!",
+  "fare.rating.ok": "OK.",
+  "fare.rating.rough": "Rough ride.",
+
+  "day.summary.title": "Day {day}",
+  "day.summary.revenue": "Revenue: ${revenue}",
+  "day.summary.expenses": "Expenses: -${expenses}",
+  "day.summary.net": "Net: ${net}",
+  "day.summary.continue": "Continue",
+
+  "settings.title": "Settings",
+  "settings.audio.master": "Master volume",
+  "settings.audio.music": "Music",
+  "settings.audio.sfx": "SFX",
+  "settings.audio.mono": "Mono audio",
+  "settings.visual.reducedMotion": "Reduced motion",
+  "settings.visual.highContrast": "High contrast",
+  "settings.visual.textScale": "Text scale",
+  "settings.visual.colorblind": "Colorblind profile",
+  "settings.motor.tiltSensitivity": "Tilt sensitivity",
+  "settings.motor.relaxedTiming": "Relaxed timing",
+  "settings.assist.economy": "Economy assist",
+  "settings.assist.relaxedPolice": "Relaxed police",
+  "settings.assist.relaxedSLAs": "Relaxed SLAs",
+  "settings.assist.autoPilot": "Auto-pilot",
+
+  "police.chase.warning": "POLICE",
+  "police.fine.paid": "Fine paid: -${amount}",
+
+  "driver.tier.rookie": "Rookie",
+  "driver.tier.journey": "Journey",
+  "driver.tier.pro": "Pro",
+  "driver.tier.ace": "Ace",
+
+  "menu.new_game": "New Game",
+  "menu.continue": "Continue",
+  "menu.settings": "Settings",
+  "menu.credits": "Credits",
+
+  "common.plural.drivers": "{count, plural, one {# driver} other {# drivers}}",
+  "common.cancel": "Cancel",
+  "common.confirm": "Confirm",
+  "common.undo": "Undo"
+}
