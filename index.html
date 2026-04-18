@@ -2,15 +2,24 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
     <title>Cabbie</title>
     <style>
-      body { margin: 0; background: #0a0a14; color: #fff; font-family: monospace; }
-      #app { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0a0a14; color: #fff; font-family: ui-monospace, Menlo, monospace; }
+      #app { position: relative; width: 100vw; height: 100vh; }
+      #game-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; }
+      #hud-root { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+      #hud-root * { pointer-events: auto; }
+      .tap-target { min-width: 44px; min-height: 44px; }
     </style>
-    <script type="module" crossorigin src="/Cabbie/assets/index-CNgrNRDx.js"></script>
+    <script type="module" crossorigin src="/Cabbie/assets/index-BzY1dDG7.js"></script>
+    <link rel="modulepreload" crossorigin href="/Cabbie/assets/constants-DxJ0Jcen.js">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <canvas id="game-canvas"></canvas>
+      <div id="hud-root"></div>
+    </div>
   </body>
 </html>
