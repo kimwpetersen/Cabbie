@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.DS_Store
+.vite/
+coverage/
+*.log
+
+# Windows
+desktop.ini
+Thumbs.db
+
+# Claude Code session data
+.claude/
