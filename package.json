@@ -1,0 +1,25 @@
+{
+  "name": "cabbie",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:dev": "cross-env VITE_PORTAL=dev vite build",
+    "build:crazygames": "cross-env VITE_PORTAL=crazygames vite build",
+    "build:newgrounds": "cross-env VITE_PORTAL=newgrounds vite build",
+    "build:itch": "cross-env VITE_PORTAL=itch vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "three": "^0.128.0"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^4.1.4",
+    "cross-env": "^7.0.3",
+    "jsdom": "^29.0.2",
+    "vite": "^8.0.8",
+    "vitest": "^4.1.4"
+  }
+}
