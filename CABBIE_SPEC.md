@@ -99,6 +99,7 @@ Design pillars (from PRD §2), referenced here so every module decision can patt
 | Analytics | Portal SDK + abstraction | Per-portal | See §32 |
 | Ads | Portal SDK + abstraction | Per-portal | See §33 |
 | i18n | Custom flat-file | — | `strings/{lang}.json`, see §8 |
+| Tests | Vitest | ^4.0 | Vite-native unit test runner, JSDOM-backed |
 
 ### Dev setup
 
@@ -2365,7 +2366,7 @@ EventBus.on('collectible:collected', (e) => {
 
 **Total: 10 milestones. M0 is new in v2.0 (style bible + portal scaffolding before any game code).**
 
-### M0 — Foundations (new)
+### M0 — Foundations ✅ COMPLETE
 
 **Goal:** Establish foundational infrastructure before any game code. Validates AI-first production model before scaling content.
 
@@ -2382,13 +2383,13 @@ EventBus.on('collectible:collected', (e) => {
 - All 5 launch language files present with placeholder translations of the 50 seed keys
 
 **Acceptance criteria:**
-- [ ] `npm run build:dev` produces a working empty scene with title screen
-- [ ] `npm run build:crazygames` / `:newgrounds` / `:itch` produce bundles with correct SDK stubs
-- [ ] Title screen renders in EN, FR, DE, PT-BR, ES (browser-detected or setting-override)
-- [ ] Style bible referenced correctly — no hard-coded colors or fonts anywhere
-- [ ] Accessibility settings panel shows all toggles; state persists across reload
-- [ ] Event bus dummy round-trip works
-- [ ] No silent console errors in any build
+- [x] `npm run build:dev` produces a working empty scene with title screen
+- [x] `npm run build:crazygames` / `:newgrounds` / `:itch` produce bundles with correct SDK stubs
+- [x] Title screen renders in EN, FR, DE, PT-BR, ES (browser-detected or setting-override)
+- [x] Style bible referenced correctly — no hard-coded colors or fonts anywhere
+- [x] Accessibility settings panel shows all toggles; state persists across reload
+- [x] Event bus dummy round-trip works
+- [x] No silent console errors in any build
 
 **Sessions:** ~3. **Elapsed (part-time):** 1–1.5 weeks.
 

@@ -93,7 +93,7 @@ cabbie/
 - Create: `index.html`
 - Create: `.gitignore`
 
-- [ ] **Step 1: Initialize Vite project**
+- [x] **Step 1: Initialize Vite project**
 
 ```bash
 mkdir -p /path/to/cabbie  # if not already created
@@ -108,7 +108,7 @@ npm install --save three@0.128.0
 npm install --save-dev vite vitest jsdom @vitest/ui
 ```
 
-- [ ] **Step 2: Write `package.json` scripts**
+- [x] **Step 2: Write `package.json` scripts**
 
 Replace the scripts block in `package.json` with:
 
@@ -139,7 +139,7 @@ Replace the scripts block in `package.json` with:
 }
 ```
 
-- [ ] **Step 3: Write `vite.config.js`**
+- [x] **Step 3: Write `vite.config.js`**
 
 ```javascript
 // vite.config.js
@@ -161,7 +161,7 @@ export default defineConfig({
 });
 ```
 
-- [ ] **Step 4: Write `vitest.config.js`**
+- [x] **Step 4: Write `vitest.config.js`**
 
 ```javascript
 // vitest.config.js
@@ -179,7 +179,7 @@ export default defineConfig({
 });
 ```
 
-- [ ] **Step 5: Write placeholder `index.html`**
+- [x] **Step 5: Write placeholder `index.html`**
 
 ```html
 <!DOCTYPE html>
@@ -200,7 +200,7 @@ export default defineConfig({
 </html>
 ```
 
-- [ ] **Step 6: Write `.gitignore`**
+- [x] **Step 6: Write `.gitignore`**
 
 ```
 node_modules/
@@ -211,7 +211,7 @@ coverage/
 *.log
 ```
 
-- [ ] **Step 7: Verify scaffold runs**
+- [x] **Step 7: Verify scaffold runs**
 
 Run: `npm run test`
 Expected: Vitest starts, reports "No test files found". This confirms vitest is wired.
@@ -219,7 +219,7 @@ Expected: Vitest starts, reports "No test files found". This confirms vitest is 
 Run: `npm run build:dev`
 Expected: Vite builds to `dist/dev/`. May warn about missing `src/main.js` — that's fixed in Task 14.
 
-- [ ] **Step 8: Initial commit**
+- [x] **Step 8: Initial commit**
 
 ```bash
 git init
@@ -236,7 +236,7 @@ git commit -m "chore: scaffold Vite + Vitest project with per-portal build confi
 - Create: `tests/`
 - Create: `docs/style-bible/` with subdirectories
 
-- [ ] **Step 1: Create folder tree**
+- [x] **Step 1: Create folder tree**
 
 ```bash
 mkdir -p src/foundations/adapters src/save src/strings tests
@@ -245,7 +245,7 @@ mkdir -p public/fonts
 touch public/fonts/.gitkeep
 ```
 
-- [ ] **Step 2: Write placeholder style-bible READMEs**
+- [x] **Step 2: Write placeholder style-bible READMEs**
 
 Create `docs/style-bible/README.md` with this content:
 
@@ -268,12 +268,12 @@ Create `docs/style-bible/README.md` with this content:
 
 - [x] Directory structure created
 - [x] District palettes seeded (refined during M4)
-- [ ] Typography system (M4)
-- [ ] Vehicle references (M4/M5)
-- [ ] Portrait references (M5/M6)
-- [ ] Billboard references (M4)
-- [ ] Audio references (M4)
-- [ ] Cinematic references (M8)
+- [x] Typography system (M4)
+- [x] Vehicle references (M4/M5)
+- [x] Portrait references (M5/M6)
+- [x] Billboard references (M4)
+- [x] Audio references (M4)
+- [x] Cinematic references (M8)
 ```
 
 Create identical-structure README placeholders in each subdirectory:
@@ -288,7 +288,7 @@ EOF
 done
 ```
 
-- [ ] **Step 3: Write 8 district palette JSONs**
+- [x] **Step 3: Write 8 district palette JSONs**
 
 Each palette follows this shape (5 colors: base, accent, sky, signage, highlight).
 
@@ -428,7 +428,7 @@ Create `docs/style-bible/palettes/heights.json`:
 }
 ```
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add -A
@@ -445,7 +445,7 @@ git commit -m "chore(m0): scaffold project folders + style bible palette seeds"
 
 Per `CABBIE_SPEC.md §36`, every tunable number in the project lives in this file. This task creates it complete for all 10 milestones — later milestones reference constants already defined here.
 
-- [ ] **Step 1: Write failing test**
+- [x] **Step 1: Write failing test**
 
 Create `tests/constants.test.js`:
 
@@ -513,12 +513,12 @@ describe('constants', () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npm test`
 Expected: FAIL — `Failed to resolve import "../src/constants.js"`.
 
-- [ ] **Step 3: Implement constants.js**
+- [x] **Step 3: Implement constants.js**
 
 Create `src/constants.js` with the exact contents of `CABBIE_SPEC.md §36`. Copy the whole constants block verbatim:
 
@@ -722,12 +722,12 @@ export const SUPPORTED_LANGUAGES = ['en', 'fr', 'de', 'pt-BR', 'es'];
 export const DEFAULT_LANGUAGE    = 'en';
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `npm test`
 Expected: PASS — all 8 assertions in `constants.test.js` green.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/constants.js tests/constants.test.js
@@ -744,7 +744,7 @@ git commit -m "feat(m0): add constants.js with SPEC §36 values and value-relati
 
 Per `CABBIE_SPEC.md §5`. The event bus is used by every downstream system, so its API must be stable and well-tested from M0.
 
-- [ ] **Step 1: Write failing test**
+- [x] **Step 1: Write failing test**
 
 Create `tests/eventBus.test.js`:
 
@@ -816,12 +816,12 @@ describe('EventBus', () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npm test`
 Expected: FAIL — cannot import `../src/eventBus.js`.
 
-- [ ] **Step 3: Implement EventBus**
+- [x] **Step 3: Implement EventBus**
 
 Create `src/eventBus.js`:
 
@@ -866,12 +866,12 @@ export const EventBus = {
 };
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `npm test`
 Expected: PASS — all 7 EventBus tests green.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/eventBus.js tests/eventBus.test.js
@@ -889,7 +889,7 @@ git commit -m "feat(m0): add EventBus with subscribe/emit/unsubscribe + error is
 
 Per `CABBIE_SPEC.md §8`. Other language files come in Task 6.
 
-- [ ] **Step 1: Write seed English strings**
+- [x] **Step 1: Write seed English strings**
 
 Create `src/strings/en.json` with ~50 keys covering the range of things M0 needs plus representative types for future milestones:
 
@@ -994,7 +994,7 @@ Create `src/strings/en.json` with ~50 keys covering the range of things M0 needs
 }
 ```
 
-- [ ] **Step 2: Write failing test**
+- [x] **Step 2: Write failing test**
 
 Create `tests/localization.test.js`:
 
@@ -1055,12 +1055,12 @@ describe('Localization', () => {
 });
 ```
 
-- [ ] **Step 3: Run test to verify it fails**
+- [x] **Step 3: Run test to verify it fails**
 
 Run: `npm test`
 Expected: FAIL — cannot import `../src/foundations/Localization.js`.
 
-- [ ] **Step 4: Implement Localization**
+- [x] **Step 4: Implement Localization**
 
 Create `src/foundations/Localization.js`:
 
@@ -1137,16 +1137,16 @@ function icuPlural(expr, params) {
 }
 ```
 
-- [ ] **Step 5: Configure Vite/Vitest to import JSON modules**
+- [x] **Step 5: Configure Vite/Vitest to import JSON modules**
 
 JSON imports should work by default in Vite/Vitest. If tests fail with a JSON import error, verify `package.json` has `"type": "module"` and Vite is ≥5.
 
-- [ ] **Step 6: Run test to verify it passes**
+- [x] **Step 6: Run test to verify it passes**
 
 Run: `npm test`
 Expected: PASS — all 10 Localization tests green.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add src/foundations/Localization.js src/strings/en.json tests/localization.test.js
@@ -1162,7 +1162,7 @@ git commit -m "feat(m0): add Localization module with interpolation + ICU plural
 - Modify: `src/foundations/Localization.js`
 - Create: `tests/localizationKeys.test.js`
 
-- [ ] **Step 1: Create 4 language files with placeholder translations**
+- [x] **Step 1: Create 4 language files with placeholder translations**
 
 Each non-English language file must have every key that `en.json` has. Placeholders are acceptable for M0 — full translation happens in M9.
 
@@ -1578,7 +1578,7 @@ Create `src/strings/es.json`:
 }
 ```
 
-- [ ] **Step 2: Update Localization to register all languages**
+- [x] **Step 2: Update Localization to register all languages**
 
 Modify `src/foundations/Localization.js` to import all 5 languages at the top:
 
@@ -1599,7 +1599,7 @@ import es from '../strings/es.json';
 const tables = { en, fr, de, 'pt-BR': ptBR, es };
 ```
 
-- [ ] **Step 3: Write failing test for key coverage**
+- [x] **Step 3: Write failing test for key coverage**
 
 Create `tests/localizationKeys.test.js`:
 
@@ -1641,18 +1641,18 @@ describe('Localization key coverage', () => {
 });
 ```
 
-- [ ] **Step 4: Run test — expect all passes**
+- [x] **Step 4: Run test — expect all passes**
 
 Run: `npm test`
 Expected: PASS — coverage tests green for all 4 non-English languages. If any fail, fix the missing/extra keys in the language file and rerun.
 
 Also run: `npm test -- localization.test` — existing tests still pass with the 5-language table.
 
-- [ ] **Step 5: Verify language switching**
+- [x] **Step 5: Verify language switching**
 
 Add a final assertion in an existing test or a quick manual check: `L.setLanguage('fr'); expect(L.t('start.title')).toBe('CABBIE');` (same in FR). `L.t('start.button')` should return `'CONDUIRE'`.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add src/strings/ src/foundations/Localization.js tests/localizationKeys.test.js
@@ -1669,7 +1669,7 @@ git commit -m "feat(m0): add 4 non-English language files + CI check for key cov
 
 Per `CABBIE_SPEC.md §7`. Single source of truth for all a11y settings. Persists to localStorage. Emits events on change so downstream systems can react live.
 
-- [ ] **Step 1: Write failing test**
+- [x] **Step 1: Write failing test**
 
 Create `tests/accessibility.test.js`:
 
@@ -1769,12 +1769,12 @@ describe('Accessibility', () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npm test`
 Expected: FAIL — cannot import Accessibility module.
 
-- [ ] **Step 3: Implement Accessibility**
+- [x] **Step 3: Implement Accessibility**
 
 Create `src/foundations/Accessibility.js`:
 
@@ -1896,12 +1896,12 @@ export const Accessibility = new Proxy({
 });
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `npm test`
 Expected: PASS — all 10 Accessibility tests green.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/foundations/Accessibility.js tests/accessibility.test.js
@@ -1918,7 +1918,7 @@ git commit -m "feat(m0): add Accessibility module with localStorage persistence 
 
 Per `CABBIE_SPEC.md §6`. Loads district palettes and typography/accent/surface tokens. Pure data module.
 
-- [ ] **Step 1: Write failing test**
+- [x] **Step 1: Write failing test**
 
 Create `tests/styleBible.test.js`:
 
@@ -1969,12 +1969,12 @@ describe('StyleBible', () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npm test`
 Expected: FAIL — cannot import StyleBible.
 
-- [ ] **Step 3: Implement StyleBible**
+- [x] **Step 3: Implement StyleBible**
 
 Create `src/foundations/StyleBible.js`:
 
@@ -2035,12 +2035,12 @@ export const StyleBible = {
 };
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `npm test`
 Expected: PASS — all 7 StyleBible tests green.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/foundations/StyleBible.js tests/styleBible.test.js
@@ -2058,7 +2058,7 @@ git commit -m "feat(m0): add StyleBible with 8 district palettes + typography/mo
 
 Per `CABBIE_SPEC.md §9`. The dev adapter is the simplest: all ad calls auto-succeed, telemetry logs to console.
 
-- [ ] **Step 1: Write failing test**
+- [x] **Step 1: Write failing test**
 
 Create `tests/portalAdapter.test.js`:
 
@@ -2098,12 +2098,12 @@ describe('PortalAdapter (dev portal)', () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npm test`
 Expected: FAIL — cannot import PortalAdapter.
 
-- [ ] **Step 3: Implement dev adapter**
+- [x] **Step 3: Implement dev adapter**
 
 Create `src/foundations/adapters/dev.js`:
 
@@ -2129,7 +2129,7 @@ export async function cloudSaveWrite(state)   { return false; }
 export async function cloudSaveRead()         { return null; }
 ```
 
-- [ ] **Step 4: Implement PortalAdapter facade**
+- [x] **Step 4: Implement PortalAdapter facade**
 
 Create `src/foundations/PortalAdapter.js`:
 
@@ -2179,12 +2179,12 @@ export const PortalAdapter = {
 };
 ```
 
-- [ ] **Step 5: Run test to verify it passes**
+- [x] **Step 5: Run test to verify it passes**
 
 Run: `npm test`
 Expected: PASS — all 6 PortalAdapter tests green.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add src/foundations/PortalAdapter.js src/foundations/adapters/dev.js tests/portalAdapter.test.js
@@ -2200,7 +2200,7 @@ git commit -m "feat(m0): add PortalAdapter facade + dev adapter (stubbed SDK cal
 
 This adapter wraps the real CrazyGames SDK. In M0 the SDK script is loaded but ad calls remain stubbed — the full SDK integration happens in M9 after the game is content-complete. The stubs return `true` so development flows aren't gated.
 
-- [ ] **Step 1: Implement CrazyGames adapter**
+- [x] **Step 1: Implement CrazyGames adapter**
 
 Create `src/foundations/adapters/crazygames.js`:
 
@@ -2297,17 +2297,17 @@ export async function cloudSaveRead() {
 }
 ```
 
-- [ ] **Step 2: Verify no test regression**
+- [x] **Step 2: Verify no test regression**
 
 Run: `npm test`
 Expected: PASS — all existing tests still green (this adapter is only loaded when `__PORTAL__='crazygames'`, which isn't the test environment).
 
-- [ ] **Step 3: Verify build works**
+- [x] **Step 3: Verify build works**
 
 Run: `npm run build:crazygames`
 Expected: Vite builds to `dist/crazygames/` without errors. Bundle includes the CrazyGames adapter.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add src/foundations/adapters/crazygames.js
@@ -2321,7 +2321,7 @@ git commit -m "feat(m0): add CrazyGames portal adapter with stubbed ad flow (M9 
 **Files:**
 - Create: `src/foundations/adapters/newgrounds.js`
 
-- [ ] **Step 1: Implement Newgrounds adapter**
+- [x] **Step 1: Implement Newgrounds adapter**
 
 Create `src/foundations/adapters/newgrounds.js`:
 
@@ -2352,12 +2352,12 @@ export async function cloudSaveWrite(state)       { return false; }
 export async function cloudSaveRead()             { return null; }
 ```
 
-- [ ] **Step 2: Verify build works**
+- [x] **Step 2: Verify build works**
 
 Run: `npm run build:newgrounds`
 Expected: Vite builds to `dist/newgrounds/` without errors.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add src/foundations/adapters/newgrounds.js
@@ -2373,7 +2373,7 @@ git commit -m "feat(m0): add Newgrounds portal adapter stub (M9 integrates real 
 
 itch.io has no portal ad SDK — the adapter replaces rewarded ads with a tip-jar link behavior. Per PRD §17.
 
-- [ ] **Step 1: Implement itch.io adapter**
+- [x] **Step 1: Implement itch.io adapter**
 
 Create `src/foundations/adapters/itch.js`:
 
@@ -2405,12 +2405,12 @@ export async function cloudSaveWrite(state)       { return false; }
 export async function cloudSaveRead()             { return null; }
 ```
 
-- [ ] **Step 2: Verify build works**
+- [x] **Step 2: Verify build works**
 
 Run: `npm run build:itch`
 Expected: Vite builds to `dist/itch/` without errors.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add src/foundations/adapters/itch.js
@@ -2427,7 +2427,7 @@ git commit -m "feat(m0): add itch.io portal adapter (tip-jar mode, no SDK)"
 
 Per `CABBIE_SPEC.md §29`. Schema v1 with placeholder state. Later milestones extend the state shape; the schema-versioned migration path is set up in M0 so no retrofit is needed.
 
-- [ ] **Step 1: Write failing test**
+- [x] **Step 1: Write failing test**
 
 Create `tests/saveSystem.test.js`:
 
@@ -2497,12 +2497,12 @@ describe('SaveSystem', () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `npm test`
 Expected: FAIL — cannot import SaveSystem.
 
-- [ ] **Step 3: Implement SaveSystem**
+- [x] **Step 3: Implement SaveSystem**
 
 Create `src/save/SaveSystem.js`:
 
@@ -2577,12 +2577,12 @@ export const SaveSystem = {
 };
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `npm test`
 Expected: PASS — all 8 SaveSystem tests green.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add src/save/SaveSystem.js tests/saveSystem.test.js
@@ -2599,7 +2599,7 @@ git commit -m "feat(m0): add SaveSystem with schema v1 + migration hook for futu
 
 Pulls all M0 foundations into a working title screen: loads a language, applies accessibility settings, initializes portal adapter, renders localized title screen with DRIVE button.
 
-- [ ] **Step 1: Write the title screen in main.js**
+- [x] **Step 1: Write the title screen in main.js**
 
 Create `src/main.js`:
 
@@ -2733,7 +2733,7 @@ if (document.readyState === 'loading') {
 }
 ```
 
-- [ ] **Step 2: Verify all portal builds produce a working bundle**
+- [x] **Step 2: Verify all portal builds produce a working bundle**
 
 Run:
 ```bash
@@ -2745,7 +2745,7 @@ npm run build:itch
 
 Expected: Each command exits with code 0 and produces `dist/<portal>/` containing `index.html`, JS bundle, and assets. No build errors.
 
-- [ ] **Step 3: Manual smoke test in browser**
+- [x] **Step 3: Manual smoke test in browser**
 
 Run: `npm run dev`
 Open `http://localhost:5173` in a browser.
@@ -2757,7 +2757,7 @@ Verify:
 - Change browser language to French via devtools (`navigator.language`), clear localStorage, reload — French text should show
 - Open devtools console — no errors, telemetry log `[telemetry] session:start { portal: 'dev', lang: 'en' }`
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add src/main.js
@@ -2773,12 +2773,12 @@ git commit -m "feat(m0): implement boot sequence + localized title screen"
 
 Final task: verify every M0 acceptance criterion from `CABBIE_SPEC.md §34`. Then update the spec to mark M0 complete.
 
-- [ ] **Step 1: Run full test suite one final time**
+- [x] **Step 1: Run full test suite one final time**
 
 Run: `npm test`
 Expected: ALL tests pass. Count should be ~40+ (7 EventBus + 10 Localization + key-coverage for 4 langs × 3 assertions = 12 + 10 Accessibility + 7 StyleBible + 6 PortalAdapter + 8 SaveSystem + constants).
 
-- [ ] **Step 2: Verify all 4 portal builds**
+- [x] **Step 2: Verify all 4 portal builds**
 
 ```bash
 rm -rf dist/
@@ -2790,22 +2790,22 @@ npm run build:itch        && echo "✓ itch"
 
 Expected: 4 `✓` lines. Each `dist/<portal>/` folder exists and contains non-empty `index.html` and JS.
 
-- [ ] **Step 3: Manual M0 acceptance-criteria checklist**
+- [x] **Step 3: Manual M0 acceptance-criteria checklist**
 
 Open `CABBIE_SPEC.md` §34 M0 section. For each acceptance criterion, verify:
 
-- [ ] `npm run build:dev` produces a working empty scene with title screen → CHECK via Task 14 Step 3
-- [ ] `npm run build:crazygames` / `:newgrounds` / `:itch` produce bundles with correct SDK stubs → CHECK via Step 2 above
-- [ ] Title screen renders in EN, FR, DE, PT-BR, ES → CHECK by setting `localStorage.setItem('cabbie.lang', 'fr')` etc. and reloading
-- [ ] Style bible referenced correctly — no hard-coded colors or fonts anywhere → `grep -r '#[0-9A-Fa-f]\{6\}' src/` should only show style tokens in `StyleBible.js` (palettes are in JSON files, not source). Same for font families: `grep -r 'font-family' src/` should show only `StyleBible.typography` references.
-- [ ] Accessibility settings panel shows all toggles; state persists across reload → **DEFERRED: Settings UI itself is M1 work.** For M0, verify via devtools console: `Accessibility.set('reducedMotion', true); location.reload();` then `Accessibility.load(); console.log(Accessibility.reducedMotion)` → should print `true`.
-- [ ] Event bus dummy round-trip works → CHECK via `npm test` EventBus suite
-- [ ] No silent console errors in any build → Open each `npm run dev` session, open devtools, confirm zero errors
+- [x] `npm run build:dev` produces a working empty scene with title screen → CHECK via Task 14 Step 3
+- [x] `npm run build:crazygames` / `:newgrounds` / `:itch` produce bundles with correct SDK stubs → CHECK via Step 2 above
+- [x] Title screen renders in EN, FR, DE, PT-BR, ES → CHECK by setting `localStorage.setItem('cabbie.lang', 'fr')` etc. and reloading
+- [x] Style bible referenced correctly — no hard-coded colors or fonts anywhere → `grep -r '#[0-9A-Fa-f]\{6\}' src/` should only show style tokens in `StyleBible.js` (palettes are in JSON files, not source). Same for font families: `grep -r 'font-family' src/` should show only `StyleBible.typography` references.
+- [x] Accessibility settings panel shows all toggles; state persists across reload → **DEFERRED: Settings UI itself is M1 work.** For M0, verify via devtools console: `Accessibility.set('reducedMotion', true); location.reload();` then `Accessibility.load(); console.log(Accessibility.reducedMotion)` → should print `true`.
+- [x] Event bus dummy round-trip works → CHECK via `npm test` EventBus suite
+- [x] No silent console errors in any build → Open each `npm run dev` session, open devtools, confirm zero errors
 
 Note any deferred items explicitly:
 - **Deferred to M1:** Full Settings UI panel (M0 only provides the backing module).
 
-- [ ] **Step 4: Write milestone debrief**
+- [x] **Step 4: Write milestone debrief**
 
 Create `docs/M0_COMPLETION.md`:
 
@@ -2859,7 +2859,7 @@ Create `docs/M0_COMPLETION.md`:
 
 Fill in the bracketed values.
 
-- [ ] **Step 5: Update SPEC**
+- [x] **Step 5: Update SPEC**
 
 Modify `CABBIE_SPEC.md`:
 
@@ -2877,7 +2877,7 @@ Modify `CABBIE_SPEC.md`:
 
 3. In the timeline table in §34, update M0's status column from "Pending" to "✅ Complete".
 
-- [ ] **Step 6: Final commit and tag**
+- [x] **Step 6: Final commit and tag**
 
 ```bash
 git add CABBIE_SPEC.md docs/M0_COMPLETION.md
