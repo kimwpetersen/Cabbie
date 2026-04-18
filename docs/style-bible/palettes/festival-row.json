@@ -1,0 +1,12 @@
+{
+  "id": "festival-row",
+  "name": "Festival Row",
+  "description": "Strung-light yellows, purple/red accents, warm dusk sky.",
+  "colors": {
+    "base":      "#3C2450",
+    "accent":    "#FFCB3C",
+    "sky":       "#C4567A",
+    "signage":   "#FF4068",
+    "highlight": "#FFE8A0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "financial-glass",
+  "name": "Financial Glass",
+  "description": "Cool teal, white chrome, steel sky.",
+  "colors": {
+    "base":      "#2E4D52",
+    "accent":    "#5BB8B0",
+    "sky":       "#8A94A0",
+    "signage":   "#E8EEF0",
+    "highlight": "#BEDDD8"
+  }
+}

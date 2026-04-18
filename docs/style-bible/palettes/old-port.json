@@ -1,0 +1,12 @@
+{
+  "id": "old-port",
+  "name": "Old Port",
+  "description": "Act 1 home. Warm brick, mustard yellow signage, overcast sky.",
+  "colors": {
+    "base":      "#8B5A3C",
+    "accent":    "#D4A04C",
+    "sky":       "#6B7685",
+    "signage":   "#F0C040",
+    "highlight": "#F5E6C8"
+  }
+}

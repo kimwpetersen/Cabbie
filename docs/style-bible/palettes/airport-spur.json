@@ -1,0 +1,12 @@
+{
+  "id": "airport-spur",
+  "name": "Airport Spur",
+  "description": "Tarmac grey, jet blue, safety orange.",
+  "colors": {
+    "base":      "#3A3E44",
+    "accent":    "#2E7FD4",
+    "sky":       "#8E969E",
+    "signage":   "#FF8800",
+    "highlight": "#A0B4C8"
+  }
+}

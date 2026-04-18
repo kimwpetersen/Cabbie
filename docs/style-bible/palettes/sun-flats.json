@@ -1,0 +1,12 @@
+{
+  "id": "sun-flats",
+  "name": "Sun Flats",
+  "description": "Bleached ochre, turquoise pools, hot white sky.",
+  "colors": {
+    "base":      "#DCC088",
+    "accent":    "#4FC9B4",
+    "sky":       "#F8F0E0",
+    "signage":   "#E85C3A",
+    "highlight": "#FFE8B0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "heights",
+  "name": "Heights",
+  "description": "Forest green, navy, starlit sky.",
+  "colors": {
+    "base":      "#2A4432",
+    "accent":    "#8BB87C",
+    "sky":       "#121C32",
+    "signage":   "#F0D080",
+    "highlight": "#C4E0A8"
+  }
+}

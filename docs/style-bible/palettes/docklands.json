@@ -1,0 +1,12 @@
+{
+  "id": "docklands",
+  "name": "Docklands",
+  "description": "Rust orange, steel grey, brown water.",
+  "colors": {
+    "base":      "#524438",
+    "accent":    "#C4613A",
+    "sky":       "#6C7380",
+    "signage":   "#F5C400",
+    "highlight": "#9AA0A8"
+  }
+}

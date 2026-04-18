@@ -1,0 +1,12 @@
+{
+  "id": "neon-quarter",
+  "name": "Neon Quarter",
+  "description": "Hot pink / cyan, black sky, magenta light spills.",
+  "colors": {
+    "base":      "#0E0920",
+    "accent":    "#FF2E9A",
+    "sky":       "#05030A",
+    "signage":   "#00E8FF",
+    "highlight": "#FF70C4"
+  }
+}
