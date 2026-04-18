@@ -4,3 +4,10 @@ dist/
 .vite/
 coverage/
 *.log
+
+# Windows
+desktop.ini
+Thumbs.db
+
+# Claude Code session data
+.claude/
